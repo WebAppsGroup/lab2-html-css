@@ -9,7 +9,7 @@
  <img alt="Framework" src="https://img.shields.io/badge/Bootstrap-v4.6-blue"/>
 </p>
 
-This is the transcription of the [original pdf text](https://github.com/polito-WA1-AW1-2021/course-materials/blob/main/labs/L02-getting-started-html-css.pdf) of the second laboratory of the course of Web Applications I at Politecnico di Torino. 
+This is the transcription of the [original pdf text](https://github.com/polito-WA1-AW1-2021/course-materials/blob/main/labs/L02-getting-started-html-css.pdf) of the second laboratory of the "Web Applications I" course at Politecnico di Torino. 
 
 ## A GUI for the TODO manager
 
