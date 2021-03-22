@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- my custom CSS -->
+    <link href="stylesheet.css" rel="stylesheet">
+
+    <title>ToDo-Manager</title>
+</head>
+
+<body>
+    <!---------------------- Navbar ------------------------>
+    <!-- "bg-success" provides green bg -->
+    <nav class="navbar navbar-dark navbar-expand-sm  bg-success fixed-top">
+      
+      <!-- toggle sidebar-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#left-sidebar" aria-controls="left-sidebar" aria-expanded="false" aria-label="Toggle sidebar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- title  -->
+      <a class="navbar-brand" href="#">ToDo-Manager</a>
+
+        
+        <!-- search form -->
+        <!-- "mx-auto" for auto-margin (left and right)-->
+        <form class="form-inline my-2 my-lg-0 mx-auto">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+
+      <!-- user -->
+      <div class="navbar-nav ml-md-auto">
+        <a href="#" class="navbar-left">
+          <img width="45" height="30" src="https://devtalk.blender.org/uploads/default/original/2X/c/cbd0b1a6345a44b58dda0f6a355eb39ce4e8a56a.png">
+        </a>
+      </div>
+    </nav>
+
+    <!------------------------------- page content --------------------->
+    <div class="container-fluid">
+      <div class="row vheight-100">
+      
+        <!--  L-sidebar -->
+      <aside class="collapse d-sm-block col-sm-4 col-12 below-nav" id="left-sidebar">
+        <div class="list-group ">
+          <a href="#" class="list-group-item list-group-item-action active">All</a>
+          <a href="#" class="list-group-item list-group-item-action">Important</a>
+          <a href="#" class="list-group-item list-group-item-action">Today</a>
+          <a href="#" class="list-group-item list-group-item-action">Next 7 Days</a>
+          <a href="#" class="list-group-item list-group-item-action">Private</a>
+        </div>
+      </aside>  
+
+      <!-- content (center)-->
+      <main class="col-sm-8 col-12 below-nav">
+        <!-- tasks-->
+        <ul class="list-group">
+          <!-- TASK 1 -->
+          <li class="list-group-item"> <!-- for the outer box-->
+            <div class="d-flex justify-content-between">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="check-t1">
+                <label class="custom-control-label" for="check-t1">Complete Lab 2</label>
+                <span class="badge badge-primary ml-4">Web Applications I</span>
+              </div>
+              <small>Monday 22 March 2021 at 14:30</small>
+            </div>
+          </li>
+
+          <!-- TASK 2-->
+          <li class="list-group-item"> <!-- for the outer box-->
+            <div class="d-flex justify-content-between">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="check-t2">
+                <label class="custom-control-label" for="check-t2">Buy groceries</label>
+                <span class="badge badge-success ml-3">personal</span>
+                <span class="badge badge-danger ml-2">urgent</span>
+              </div>
+              <small>Today at 14:00</small>
+            </div>
+          </li>
+
+          <!-- TASK 3-->     
+          <li class="list-group-item">
+              <div class="d-flex w-100 justify-content-between">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input important" id="check-t3">
+                  <label class="custom-control-label" for="check-t3">Read a good book!</label>
+                  <span class="badge badge-success ml-3">personal</span>
+                </div>
+              </div>
+            </li>
+
+        </ul>
+      </main>
+      
+
+
+      <!-- "new task" button --> 
+      <button type="button" class="btn btn-lg btn-success fixed-right-bottom">+</button>
+
+      </div>
+    </div>
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

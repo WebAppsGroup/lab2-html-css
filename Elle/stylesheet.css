@@ -1,0 +1,14 @@
+
+/* needed to avoid left sidebar overlapping navbar*/
+.below-nav {
+    padding-top: 5rem;
+}
+
+/* "new task" button (+) */
+.fixed-right-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0 2rem 2rem 0; /* margin from right corner*/
+    border-radius: 50%; /* to make it circular*/
+}
